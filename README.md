@@ -15,12 +15,13 @@
 1. Install Java 8 with %JAVA_HOME% environment variable configured
    ![Alt text](docs/java_installation_verification.png?raw=true)
 2. Install IntelliJ Idea Community Edition IDE
-3. Install Docker-Desktop for Kafka+Zookeeper setup
+3. Install Docker Desktop (for Kafka+Zookeeper setup)
 
 #### Steps to run the producer:
-1. Clone this repository from IntelliJ Idea IDE (Create project with "Get from VCS" feature using HTTPS GIT URL)
-   ![Alt text](docs/spark_consumer_clone.png?raw=true) 
-2. Run `docker compose -f ./docker-compose-project.yml up --detach` to start Kafka & Zookeeper containers
+1. Start Docker Desktop
+2. Clone this repository from IntelliJ Idea IDE (Create project with "Get from VCS" feature using HTTPS GIT URL)
+   ![Alt text](docs/producer_clone.png?raw=true) 
+3. Run `docker compose -f ./docker-compose-project.yml up --detach` in the IDE terminal to start Kafka & Zookeeper containers
    ![Alt text](docs/kafka_zookeeper_start.png?raw=true)
-3. Build and Run the sbt project (or Producer.scala) in IDE
-4. When the whole streaming process is complete, to stop the Kafka+Zookeeper setup, run `docker compose -f ./docker-compose-project.yml down`
+4. Build and Run the sbt project (or Producer.scala) in IDE
+5. When the whole streaming process is complete, to stop the Kafka+Zookeeper setup, run `docker compose -f ./docker-compose-project.yml down` in the IDE terminal
