@@ -23,4 +23,4 @@
 2. Run `docker compose -f ./docker-compose-project.yml up --detach` to start Kafka & Zookeeper containers
    ![Alt text](docs/kafka_zookeeper_start.png?raw=true)
 3. Build and Run the sbt project (or Producer.scala) in IDE
-4. To stop the Kafka+Zookeeper setup, run `docker compose -f ./docker-compose-project.yml down`
+4. When the whole streaming process is complete, to stop the Kafka+Zookeeper setup, run `docker compose -f ./docker-compose-project.yml down`
